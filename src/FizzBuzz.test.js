@@ -7,8 +7,8 @@ describe("Generar Fizz-Buzz-FizzBuz", () => {
   it("deberia generar una secuencia hasta el mismo numero para un numero sin regla [2]", () => {
     expect(generarFizzBuzz(2)).toEqual("1, 2");
   });
-  it("deberia generar Fizz para un numero multiplo de 3 [3]", () => {
-    expect(generarFizzBuzz(3)).toEqual("Fizz");
+  it("deberia generar una secuencia hasta Fizz para un numero multiplo de 3 [3]", () => {
+    expect(generarFizzBuzz(3)).toEqual("1, 2, Fizz");
   });
   it("deberia generar Fizz para un numero multiplo de 3 [6]", () => {
     expect(generarFizzBuzz(6)).toEqual("Fizz");
