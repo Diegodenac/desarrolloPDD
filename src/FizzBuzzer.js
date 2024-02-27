@@ -1,5 +1,5 @@
 function generarFizzBuzz(n) {
-  return "1";
+  return n.toString();
 }
 
 export default generarFizzBuzz;
