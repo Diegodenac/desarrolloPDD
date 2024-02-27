@@ -11,8 +11,14 @@ function generarFizzBuzz(n) {
 function generarSecuencia(n) {
   let i=1;
   let message = "";
-  message = message + generarFizzBuzz(1);
+  while (i<=n){
+    message = message + generarFizzBuzz(i);
+    if(i<n){
+      message = message + ", ";
+    }
+    i++;
+  }
   return message;
 }
 
-export default generarFizzBuzz;
+export { generarFizzBuzz, generarSecuencia };

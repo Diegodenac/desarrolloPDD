@@ -1,5 +1,4 @@
-import generarSecuencia from "./FizzBuzzer.js";
-import generarFizzBuzz from "./FizzBuzzer.js";
+import { generarFizzBuzz, generarSecuencia } from "./FizzBuzzer.js";
 
 describe("Generar Fizz-Buzz-FizzBuz", () => {
   it("deberia generar el mismo numero para un numero sin regla [1]", () => {
@@ -31,6 +30,9 @@ describe("Generar Fizz-Buzz-FizzBuz", () => {
 describe("Generar secuencia Fizz-Buzz-FizzBuz", () => {
   it("deberia generar una secuencia hasta el mismo numero para un numero sin regla [1]", () => {
     expect(generarSecuencia(1)).toEqual("1");
+  });
+  it("deberia generar una secuencia hasta el mismo numero para un numero sin regla [2]", () => {
+    expect(generarSecuencia(2)).toEqual("1, 2");
   });
 });
 
