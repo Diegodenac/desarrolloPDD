@@ -16,13 +16,13 @@ describe("Generar Fizz-Buzz-FizzBuz", () => {
   it("deberia generar una secuencia hasta Fizz para un numero multiplo de 3 [6]", () => {
     expect(generarFizzBuzz(6)).toEqual("1, 2, Fizz, 4, Buzz, Fizz");
   });
-  it("deberia generar Buzz para un numero multiplo de 5 [10]", () => {
+  it("deberia generar una secuencia hasta Buzz para un numero multiplo de 5 [10]", () => {
     expect(generarFizzBuzz(10)).toEqual("1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz");
   });
-  it("deberia generar FizzBuzz para un numero multiplo de 3 y 5 [15]", () => {
-    expect(generarFizzBuzz(15)).toEqual("FizzBuzz");
+  it("deberia generar una secuencia hasta FizzBuzz para un numero multiplo de 3 y 5 [15]", () => {
+    expect(generarFizzBuzz(15)).toEqual("1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz");
   });
   it("deberia generar FizzBuzz para un numero multiplo de 3 y 5 [30]", () => {
-    expect(generarFizzBuzz(15)).toEqual("FizzBuzz");
+    expect(generarFizzBuzz(30)).toEqual("FizzBuzz");
   });
 });
