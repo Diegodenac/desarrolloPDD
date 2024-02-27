@@ -23,6 +23,6 @@ describe("Generar Fizz-Buzz-FizzBuz", () => {
     expect(generarFizzBuzz(15)).toEqual("1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz");
   });
   it("deberia generar FizzBuzz para un numero multiplo de 3 y 5 [30]", () => {
-    expect(generarFizzBuzz(30)).toEqual("FizzBuzz");
+    expect(generarFizzBuzz(30)).toEqual("1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, FizzBuzz");
   });
 });
