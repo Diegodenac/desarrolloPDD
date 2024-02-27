@@ -10,11 +10,11 @@ describe("Generar Fizz-Buzz-FizzBuz", () => {
   it("deberia generar una secuencia hasta Fizz para un numero multiplo de 3 [3]", () => {
     expect(generarFizzBuzz(3)).toEqual("1, 2, Fizz");
   });
-  it("deberia generar una secuencia hasta Fizz para un numero multiplo de 3 [6]", () => {
-    expect(generarFizzBuzz(6)).toEqual("1, 2, Fizz, 4, 5, Fizz");
+  it("deberia generar una secuencia hasta Buzz para un numero multiplo de 5 [5]", () => {
+    expect(generarFizzBuzz(5)).toEqual("1, 2, Fizz, 4, Buzz");
   });
-  it("deberia generar Buzz para un numero multiplo de 5 [5]", () => {
-    expect(generarFizzBuzz(5)).toEqual("Buzz");
+  it("deberia generar una secuencia hasta Fizz para un numero multiplo de 3 [6]", () => {
+    expect(generarFizzBuzz(6)).toEqual("1, 2, Fizz, 4, Buzz, Fizz");
   });
   it("deberia generar Buzz para un numero multiplo de 5 [10]", () => {
     expect(generarFizzBuzz(10)).toEqual("Buzz");

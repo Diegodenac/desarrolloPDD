@@ -4,16 +4,18 @@ function generarFizzBuzz(n) {
   while (i<=n){
     if(i%3 === 0)
       message = message + "Fizz";
-    else
-      message = message + i.toString();
+    else{
+      if(i%5 === 0)
+        message = message + "Buzz";
+      else
+        message = message + i.toString();
+    }
     if(i<n)
       message = message + ", ";
     i++;
   }
   if(n%3 === 0 && n%5 === 0)
     return "FizzBuzz";
-  if(n%5 === 0)
-    return "Buzz";
   return message;
 }
 
