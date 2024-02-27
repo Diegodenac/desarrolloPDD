@@ -22,4 +22,7 @@ describe("Generar Fizz-Buzz-FizzBuz", () => {
   it("deberia generar FizzBuzz para un numero multiplo de 3 y 5 [15]", () => {
     expect(generarFizzBuzz(15)).toEqual("FizzBuzz");
   });
+  it("deberia generar FizzBuzz para un numero multiplo de 3 y 5 [30]", () => {
+    expect(generarFizzBuzz(15)).toEqual("FizzBuzz");
+  });
 });
